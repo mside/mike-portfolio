@@ -8,7 +8,7 @@ import Gallery from '../Gallery/Gallery';
 
 //Props have to be passed into function for props to work
 const layout = () => (
-    <div>
+    <div className='container'>
         <Header />
         <Route path="/" exact component={ Home } />
         <Route path="/menu" exact component={ MenuModal } />

@@ -16,7 +16,6 @@ body {
   background-color: #1a1a1a;
 }
 
-
 /* default font: helvetica */
 @font-face {
   font-family: 'illuma';
@@ -44,35 +43,38 @@ body {
   background-color: #1a1a1a;
 }
 
-/* LOGO NAV */
-.headerContainer {
-  margin-bottom: 25px;
+/* Header */
+.header__primary {
+  /* somethign */
 }
 
-.logo {
+.logo__primary {
   max-width: 252px;
   width: 100%;
 }
 
-.menuButton {
-  position: absolute;
-  top: 150px;
-  right: 75px;
+.menu__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__button {
   background-color: Transparent;
   background-repeat:no-repeat;
   border: none;
-  display: block;
+  width: 100%;
 }
 
-.menuButton a {
+.menu__button a {
   font-family: 'illuma', 'helvetica', 'sans-serif';
   font-size: 35px;
   color: #ffffff;
   text-decoration: none;
 }
 
-.menuButton a:hover {
-  color: grey;
+.menu__button a:hover {
+  color: #B8B8B8;
 }
 
 /* BUTTON STYLES */

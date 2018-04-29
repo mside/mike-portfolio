@@ -1,7 +1,7 @@
 import React from 'react';
 
 const home = () => (
-    <div>
+    <div className='row'>
         <h2 className="centerLargeText01">Hello, my name is Michael Side</h2>
         <h2 className="centerLargeText01">thank you for taking interest in my work</h2>
         <h2 className="centerLargeText02">You can find my work by clicking the arrow</h2>
