@@ -5,21 +5,25 @@ import mikeCV from '../../../assets/img/michaelSideResume.pdf';
 
 //Props have to be passed into function for props to work
 const about = () => (
-    <div>
-        <div className="contentContainer">
-            <div  className="aboutImgContainer">
-                <img src={ self } alt="Michael Side Web Development" />
-            </div>        
-            <div className="aboutTextContainer">
-                <h3>Michael Side</h3>
-                <h5>Web Development, Icon + Logo Design</h5>
-                <p>A brief description possibly -  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                <Link className="resumeC2A" to='/about/resume'>
-                    See Resume
-                </Link>
-                <a className="resumeC2A" href={ mikeCV }>
-                    Download Resume
-                </a>
+    <div className="row workContainer__primary">
+        <div className="col-lg-3 aboutImg__primary">
+            <img src={ self } alt="Michael Side Web Development" />
+        </div>        
+        <div className="col-lg-9 workText__primary">
+            <h1>Michael Side</h1>
+            <h3>Web Development, Icon + Logo Design</h3>
+            <p>Web Developer specializing in front end development with one year worth of experience and education in Web Design and Development. Experienced in all stages of design and development for the creation of dynamic websites. Knowledgeable in numerous programming languages and design programs including HTML5, CSS, Javascript, JQuery, PHP, Adobe Photoshop, and Adobe Illustrator.</p>
+            <div className="row">
+                <div className="col-4 offset-2">
+                    <Link to='/about/resume'>
+                        <input type="submit" value="See Resume" class='obj__button obj__button--inline' />
+                    </Link>
+                </div>
+                <div className="col-6">
+                    <a href={ mikeCV }>
+                        <input type="submit" value="Download Resume" class='obj__button obj__button--inline' />
+                    </a>
+                </div>
             </div>
         </div>
     </div>

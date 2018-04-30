@@ -5,23 +5,24 @@ import arrow from '../../../assets/img/arrow.svg';
 
 //Props have to be passed into function for props to work
 const mauro = () => (
-    <div>
-        <div className="contentContainer">
-            <div  className="siteThumbnail">
-                <img src={ mauroThumb } alt="Mauro VFX Professional Marketing" />
-            </div>        
-            <div className="workTextContainer">
-                <h3>Mauro Pinedo VFX Portfolio</h3>
-                <h5>Logo Design, SASS, PHP CMS</h5>
-                <p>A brief description possibly -  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </div>
+    <div className="row workContainer__primary">
+        <div className="col-md-6 thumbnail__primary">
+            <img src={ mauroThumb } alt="Board Buddies Kickstarter Professional" />
+        </div>        
+        <div className="col-md-6 workText__primary">
+            <h1>Mauro Pinedo VFX Portfolio</h1>
+            <h3>Logo Design, SASS, PHP CMS</h3>
+            <p>A non-responsive VFX portfolio designed and developed for a student at VanArts. Includes a custom PHP cms to embed video from Vimeo as more work to highlight is created. Built with HTML and SCSS.</p>
+        
+            <form action="https://www.kickstarter.com/projects/696928813/board-buddies">
+                <input type="submit" value="Book Now" class='obj__button' />
+            </form>
         </div>
-        <a className="c2A" href='vfx.michaelside.com'>
-            Check It Out
-        </a>
-        <Link to='/work/video' exact>
-            <img src={arrow} className="navArrow" alt="page navigation button" />
-        </Link>
+        <div className="arrow__primary">
+            <Link to='/work' exact>
+                <img src={arrow} alt="page navigation button" />
+            </Link>
+        </div>
     </div>
 );
 

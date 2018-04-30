@@ -5,23 +5,24 @@ import arrow from '../../../assets/img/arrow.svg';
 
 //Props have to be passed into function for props to work
 const kalibo = () => (
-    <div>
-        <div className="contentContainer">
-            <div  className="siteThumbnail">
-                <img src={ kaliboThumb } alt="Kalibo Music Portfolio Site" />
-            </div>        
-            <div className="workTextContainer">
-                <h3>Kalibo DJ Site</h3>
-                <h5>Logo Design, PHP CMS</h5>
-                <p>A brief description possibly -  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </div>
+    <div className="row workContainer__primary">
+        <div className="col-md-6 thumbnail__primary">
+            <img src={ kaliboThumb } alt="Board Buddies Kickstarter Professional" />
+        </div>        
+        <div className="col-md-6 workText__primary">
+        <h1>Kalibo DJ Portfolio</h1>
+        <h3>Bootstrap, Logo Design, SASS</h3>
+        <p>A DJ portfolio and event news website. Designed and developed singlehandedly as a term project for VanArts. Includes a custom PHP CMS for current events, with a backend login.</p>
+        
+            <form action="https://www.kickstarter.com/projects/696928813/board-buddies">
+                <input type="submit" value="Book Now" class='obj__button' />
+            </form>
         </div>
-        <a className="c2A" href='kalibo.michaelside.com'>
-            Check It Out
-        </a>
-        <Link to='/work/mauro' exact>
-            <img src={arrow} className="navArrow" alt="page navigation button" />
-        </Link>
+        <div className="arrow__primary">
+            <Link to='/work/video' exact>
+                <img src={arrow} alt="page navigation button" />
+            </Link>
+        </div>
     </div>
 );
 
